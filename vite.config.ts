@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     allowedHosts: [
-      "guardian-guardian-connect.onrender.com", // 👈 added this
+      "vistick-1.onrender.com" // 👈 added this
     ],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
