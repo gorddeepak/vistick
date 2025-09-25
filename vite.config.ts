@@ -5,24 +5,23 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
 
-  // Base path for assets, set to "/" for root deployment
+  // Base path for production assets
   base: "/",
 
   resolve: {
     alias: {
-      // Optional: allows using "@" to refer to src folder
       "@": path.resolve(__dirname, "src"),
     },
   },
 
   server: {
-    host: "::",         // allow external network access
-    port: 5173,         // Vite dev port
-    allowedHosts: "all", // allow all hosts (Render network host)
+    host: "::",
+    port: 5173,
+    allowedHosts: "all", // only for local dev; Render should serve production build
   },
 
   build: {
-    outDir: "dist",    // build output folder
-    sourcemap: false,  // optional, disable source maps in prod
+    outDir: "dist",
+    sourcemap: false,
   },
 });
