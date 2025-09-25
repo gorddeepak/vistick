@@ -74,11 +74,7 @@ const Hero = () => {
 
           {/* Product Image */}
           <div className="relative lg:order-2">
-<<<<<<< HEAD
             <div className="relative rounded-2xl overflow-hidden shadow-large">
-=======
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-large">
->>>>>>> a1c9ac8dc7519fe8bad2f9352c5ca01d7509f40c
               <img
                 src={vistickHero}
                 alt="Vistick Smart Vision Stick - A sleek white device with sensors and smart technology"
